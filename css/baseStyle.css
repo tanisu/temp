@@ -1,0 +1,171 @@
+/*@import url(pc.css) ;
+@import url(tablet.css) screen and (max-width: 1030px);
+@import url(smart.css) screen and (max-width: 760px);*/
+
+@charset "UTF-8";
+/*共通*/
+html,body{
+    height: 100%;
+}
+body{
+  font-family: Verdana,Arial,sans-serif;
+  width:90%;
+  margin: 0 auto;
+  font-size: 0.95em;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  display: block;;
+}
+h2,h3{
+  font-weight: bold;
+}
+h2{
+  font-size: 1.1em;
+  border-left:5px solid #e682e5;
+  padding:3px 0px 3px 10px;
+  margin-bottom: 10px;
+}
+h3{
+  font-size: 0.9em;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding:3px 0;
+}
+p{
+  margin-left: 5px;
+  margin-bottom: 14px;
+  font-size: 0.85em;
+}
+#wapper{
+  height: 100%;
+  min-height: 100%;
+  background: #eee;
+}
+#header{
+  overflow: hidden;
+  /*background: #f00;*/
+}
+#headerTop{
+  width: 100%;
+  background: #999;
+  color: #fff;
+}
+#footer{
+  background: #555;
+  font-size: 0.8em;
+  text-align: center;
+  color:#ccc;
+  border-top: 1px solid #ccc;
+  padding:10px 0 20px;
+}
+#container{
+
+}
+body > #wapper{
+  height: auto;
+}
+#main{
+
+}
+#sub{
+
+}
+#navLink{
+  float:right;
+  /*display: block;*/
+  cursor: pointer;
+  padding:5px;
+  border: 2px solid #ccc
+}
+#headerNav{
+  /*float:left;
+  width: 100%;
+  z-index: 2;*/
+}
+#headerNav > ul{
+  text-align: center
+}
+
+#headerNav > ul > li{
+  display: inline-block;
+  width: 15%;
+  font-size: 0.70em;
+  padding:8px;
+  background-color: #ddd;
+  /*margin-right: 5px;*/
+  border-radius: 5px;
+  /*margin-bottom: 5px;*/
+}
+img{
+  max-width: 100%;
+}
+
+#movieWrapper{
+  width:75%;
+  margin: 0 auto;
+}
+
+.movie{
+  position: relative;
+  height: 0;
+  padding-top:56.25%;
+}
+
+iframe{
+  height: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100%;
+}
+
+/* スマホのスタイル */
+#headerNav {
+    display: none;
+}
+
+/*タブレット*/
+@media all and (min-width: 760px) {
+  #navLink{
+    display: none;
+  }
+  #headerNav{
+    display: block;
+  }
+  #headerNav > ul > li{
+    display: inline-block;
+    width: 15%;
+    font-size: 0.75em;
+    padding:8px;
+    background-color: #ddd;
+    margin-right: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/*PC*/
+
+/*
+all 1000
+sub 200
+margin 10
+main 790
+*/
+@media all and (min-width: 1030px) {
+ #container{
+   overflow: hidden;
+ }
+ #main{
+   float:left;
+   width:69%;
+ }
+  #sub{
+    float: right;
+    width:30%;
+  }
+}
