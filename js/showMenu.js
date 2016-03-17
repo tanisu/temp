@@ -1,4 +1,3 @@
-
 $(function(){
   var flag = true;
   $("#navLink").on("click",function(){

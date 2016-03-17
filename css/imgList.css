@@ -8,7 +8,6 @@ ul.rank>li,ul.news>li{
   padding-bottom: 10px;
   border-bottom: 1px solid #555;
 }
-
 ul.rank>li:last-child{
   border: none;
 }
