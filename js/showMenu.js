@@ -13,4 +13,7 @@ $(function(){
       flag = true;
     }
   });
+  console.log("aaaa1207");
 });
+
+
